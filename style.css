@@ -121,3 +121,58 @@ a {
     height: 100%;
     border-radius: 6px;
 }
+
+/* Style des onglets Pays (Niveau 1) */
+.country-tab {
+    background-color: #131a26;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #232d3f;
+}
+
+.country-tab > summary {
+    background: linear-gradient(135deg, var(--psg-blue), #002244); /* Tu pourras changer la couleur globale plus tard */
+    padding: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none; /* Enlève la petite flèche noire moche par défaut */
+    border-bottom: 2px solid var(--psg-red);
+}
+
+/* Conteneur des clubs à l'intérieur du pays */
+.clubs-container {
+    padding: 1rem;
+}
+
+/* Style des blocs Clubs (Niveau 2) */
+.club-select {
+    background-color: #1c2635;
+    margin-bottom: 0.5rem;
+    border-radius: 6px;
+}
+
+.club-select > summary {
+    padding: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #e2e8f0;
+}
+
+/* Liste des chants à l'intérieur du club */
+.club-select ul {
+    margin: 0;
+    padding: 0 0 0.5rem 0;
+}
+
+.club-select li {
+    background-color: #243145;
+    margin: 0.3rem 0.8rem;
+    border-left: 3px solid var(--psg-red);
+}
+
+.club-select a {
+    padding: 0.6rem 1rem;
+    font-size: 0.95rem;
+}
